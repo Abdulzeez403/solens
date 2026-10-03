@@ -60,3 +60,4 @@ The AI chat uses a small server-side proxy so the OpenAI key is never bundled in
 3. Copy `mobile.env.example` to the app's root `.env`, set `EXPO_PUBLIC_API_URL`, then restart Expo. Use `http://localhost:8787` for an iOS simulator, `http://10.0.2.2:8787` for the standard Android emulator, or your development machine's LAN address (for example `http://192.168.1.20:8787`) for a physical Android device.
 
 The app sends the question, a small wallet summary, and recent transaction summaries to the proxy, which forwards them to OpenAI. It omits wallet addresses, transaction signatures, and account keys. The proxy has basic in-memory rate limiting for development; add authenticated access and production-grade abuse controls before deploying publicly.
+# solens
